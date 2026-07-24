@@ -229,6 +229,16 @@ footer a:hover{color:var(--blue)}
 @media(min-width:901px) and (max-width:1100px){
   .shots{columns:2}
 }
+
+.f-legal{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:32px;margin:36px 0 0;padding-top:32px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;line-height:1.6}
+.f-legal p{margin:0 0 5px}
+.f-h{color:#fff;font-size:12px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;margin-bottom:11px}
+footer a.f-in{margin-right:0;color:rgba(255,255,255,.75);border-bottom:1px solid rgba(255,255,255,.22)}
+footer a.f-in:hover{color:#fff;border-bottom-color:rgba(255,255,255,.6)}
+.f-pay{margin-top:32px;padding-top:26px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;line-height:1.6}
+.f-logos{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:13px}
+.f-logos img{height:26px;width:auto;opacity:.85}
+.f-copy{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:13px}
 </style>
 </head>
 <body>
@@ -575,7 +585,53 @@ footer a:hover{color:var(--blue)}
         <a href="https://telegram.me/dykhanie_katya_bot" onclick="ym(110726174,'reachGoal','bot')">Бот потока</a>
       </div>
     </div>
-    <div>© 2026 Дыхание для своих. Россия и Европа.</div>
+
+    <div class="f-legal">
+      <div>
+        <div class="f-h">Реквизиты</div>
+        <p>ИП Фёдорова Юлия Сергеевна</p>
+        <p>ИНН 614212779607</p>
+        <p>ОГРНИП 314619231500027</p>
+      </div>
+
+      <div>
+        <div class="f-h">Поддержка</div>
+        <p><a class="f-in" href="mailto:kfrolova13@gmail.com">kfrolova13@gmail.com</a></p>
+        <p><a class="f-in" href="https://telegram.me/EkaterinaPavliyushina">Написать в Telegram</a></p>
+        <p style="margin-top:8px">Отвечаем в течение 1 рабочего дня</p>
+      </div>
+
+      <div>
+        <div class="f-h">Документы</div>
+        <p><a class="f-in" href="/oferta.html">Публичная оферта</a></p>
+        <p><a class="f-in" href="/vozvrat.html">Политика возврата</a></p>
+        <p><a class="f-in" href="/privacy.html">Политика конфиденциальности</a></p>
+        <p><a class="f-in" href="/bezopasnost.html">Безопасность и оплата</a></p>
+      </div>
+
+      <div>
+        <div class="f-h">Об услуге</div>
+        <p>Онлайн-занятия дыхательными практиками в закрытом Telegram-канале.</p>
+        <p>Услуги оказываются дистанционно на территории РФ. Доставка товаров не осуществляется.</p>
+        <p>Доступны участницам из России и стран Европы.</p>
+      </div>
+    </div>
+
+    <div class="f-pay">
+      <div class="f-logos">
+        <img src="/img/pay/visa.svg" alt="Visa" onerror="this.style.display='none'">
+        <img src="/img/pay/mastercard.svg" alt="Mastercard" onerror="this.style.display='none'">
+        <img src="/img/pay/mir.svg" alt="Мир" onerror="this.style.display='none'">
+        <img src="/img/pay/sbp.svg" alt="СБП" onerror="this.style.display='none'">
+        <img src="/img/pay/tpay.svg" alt="T-Pay" onerror="this.style.display='none'">
+        <a href="https://tbank.ru" rel="noopener" style="margin:0;display:inline-flex;align-items:center">
+          <img src="/img/pay/tbank.svg" alt="Т-Банк" onerror="this.style.display='none'">
+        </a>
+      </div>
+      <p>Платежи обрабатывает АО «ТБанк» — <a class="f-in" href="https://tbank.ru" rel="noopener">tbank.ru</a>. Реквизиты карты передаются напрямую в банк по защищённому соединению и на нашей стороне не хранятся. <a class="f-in" href="/bezopasnost.html">Подробнее</a></p>
+    </div>
+
+    <div class="f-copy">© 2026 Дыхание для своих · ИП Фёдорова Ю.С.</div>
   </div>
 </footer>
 
